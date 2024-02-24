@@ -8,7 +8,7 @@ import Resume from '../header/Navbar/NavbarItems/Resume';
 export default function ContentCard() {
     return (
         <>
-            <h1>CONTENT CARD</h1>
+            <h1>CONTENT CARD SECTION BELOW</h1>
             <Routes>
                 <Route path='/about' element={<About />} />
                 <Route path='/portfolio' element={<Portfolio />}/>
