@@ -1,10 +1,11 @@
-import { useState } from 'react'
+import HeaderCard from "./components/header/HeaderCard";
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
+      <h1>Hi</h1>
+      <HeaderCard />
     </>
   )
 }
