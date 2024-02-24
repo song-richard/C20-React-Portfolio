@@ -1,4 +1,13 @@
-import { BrowserRouter, Routes, Route, Link }  from 'react-router-dom'
+import { 
+    BrowserRouter,
+    Routes,
+    Route,
+    Link
+}
+from 'react-router-dom';
+
+import About from './About';
+import Portfolio from './Portfolio';
 
 export default function Navbar() {
     return (
@@ -12,11 +21,11 @@ export default function Navbar() {
 
             <Routes>
                 <Route path='/about' element={<About />} />
-                <Route path='/portfolio'/>
+                <Route path='/portfolio' element={<Portfolio />}/>
                 <Route path='/contact'/>
                 <Route path='/resume'/>
             </Routes>
         </BrowserRouter>
-    )
-}
+    );
+};
 
