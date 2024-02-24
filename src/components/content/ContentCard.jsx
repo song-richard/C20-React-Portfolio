@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 
-import AboutMe from '../header/Navbar/NavbarItems/AboutMe/AboutMeCard';
+import AboutMe from '../header/Navbar/NavbarItems/AboutMe';
 import Portfolio from '../header/Navbar/NavbarItems/Portfolio';
 import Contact from '../header/Navbar/NavbarItems/Contact';
 import Resume from '../header/Navbar/NavbarItems/Resume';
