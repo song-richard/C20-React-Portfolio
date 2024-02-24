@@ -30,27 +30,14 @@ export default function Navbar() {
     return (
         <>
             <AppBar>
-                <Container>
-                    <BrowserRouter>
-                        <nav>
-                            <Link to='/about'>About Me</Link>
-                            <Link to='/portfolio'>Portfolio</Link>
-                            <Link to='/contact'>Contact</Link>
-                            <Link to='/resume'>Resume</Link>
-                        </nav>
-
-                        <Routes>
-                            <Route path='/about' element={<About />} />
-                            <Route path='/portfolio' element={<Portfolio />}/>
-                            <Route path='/contact' element={<Contact />}/>
-                            <Route path='/resume' element={<Resume />}/>
-                        </Routes>
-                    </BrowserRouter>
-                </Container>
+                <nav>
+                    <Link to='/about'>About Me</Link>
+                    <Link to='/portfolio'>Portfolio</Link>
+                    <Link to='/contact'>Contact</Link>
+                    <Link to='/resume'>Resume</Link>
+                </nav>
             </AppBar>
         </>
-
-
     );
 };
 
