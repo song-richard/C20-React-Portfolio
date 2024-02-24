@@ -6,10 +6,10 @@ import {
 }
 from 'react-router-dom';
 
-import About from './About';
-import Portfolio from './Portfolio';
-import Contact from './Contact';
-import Resume from './Resume';
+import About from './NavbarItems/About';
+import Portfolio from './NavbarItems/Portfolio';
+import Contact from './NavbarItems/Contact';
+import Resume from './NavbarItems/Resume';
 
 export default function Navbar() {
     return (
