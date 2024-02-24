@@ -8,6 +8,7 @@ from 'react-router-dom';
 
 import About from './About';
 import Portfolio from './Portfolio';
+import Contact from './Contact';
 
 export default function Navbar() {
     return (
@@ -22,7 +23,7 @@ export default function Navbar() {
             <Routes>
                 <Route path='/about' element={<About />} />
                 <Route path='/portfolio' element={<Portfolio />}/>
-                <Route path='/contact'/>
+                <Route path='/contact' element={<Contact />}/>
                 <Route path='/resume'/>
             </Routes>
         </BrowserRouter>
