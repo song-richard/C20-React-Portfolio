@@ -1,5 +1,7 @@
-import ContentCard from "./components/content/ContentCard";
 import HeaderCard from "./components/header/HeaderCard";
+import ContentCard from "./components/content/ContentCard";
+import FooterCard from "./components/footer/FooterCard";
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -9,6 +11,7 @@ function App() {
       <BrowserRouter>
         <HeaderCard />
         <ContentCard />
+        <FooterCard />
       </BrowserRouter>
     </>
   )

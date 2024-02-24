@@ -21,7 +21,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 
 
-import About from './NavbarItems/About';
+import About from './NavbarItems/AboutMe/AboutMeCard';
 import Portfolio from './NavbarItems/Portfolio';
 import Contact from './NavbarItems/Contact';
 import Resume from './NavbarItems/Resume';
@@ -30,12 +30,14 @@ export default function Navbar() {
     return (
         <>
             <AppBar>
-                <nav>
-                    <Link to='/about'>About Me</Link>
-                    <Link to='/portfolio'>Portfolio</Link>
-                    <Link to='/contact'>Contact</Link>
-                    <Link to='/resume'>Resume</Link>
-                </nav>
+                <Toolbar>
+                    <Typography variant='h6' color="inherit">
+                        <Link to='/about'>About Me </Link>
+                        <Link to='/portfolio'>Portfolio </Link>
+                        <Link to='/contact'>Contact </Link>
+                        <Link to='/resume'>Resume </Link>
+                    </Typography>
+                </Toolbar>
             </AppBar>
         </>
     );
