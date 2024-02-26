@@ -4,6 +4,9 @@ export default function About() {
 
     const richard = [
         {
+            skillsTitle: 'Skills:'
+        },
+        {
             frontendTitle: 'Front-End Technologies:',
             backendTitle: 'Back-End Technologies:'
         },
@@ -19,15 +22,15 @@ export default function About() {
             <h1>{richard.bio}</h1>
 
             <Box>
-                <Box>Skills: 
+                <Box>{richard[0].skillsTitle} 
                     <Box>
-                        <h3>{richard[0].frontendTitle}:</h3>
-                        <h4>{richard[1].frontend}</h4>
+                        <h3>{richard[1].frontendTitle}:</h3>
+                        <h4>{richard[2].frontend}</h4>
                     </Box>
                     <br></br>
                     <Box>
-                        <h3>{richard[0].backendTitle}</h3>
-                        <h4>{richard[1].backend}</h4>
+                        <h3>{richard[1].backendTitle}</h3>
+                        <h4>{richard[2].backend}</h4>
                     </Box>
 
                 </Box>

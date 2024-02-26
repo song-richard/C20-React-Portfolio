@@ -60,7 +60,7 @@ export default function portfolio() {
                     {projects[1]._id}
 
                     <Box>
-                    Project Title
+                    {/* Project Title */}
                     {projects[1].title}
                     </Box>
 
