@@ -7,16 +7,19 @@ export default function portfolio() {
             _id: 'Project 1',
             title: 'appTrackr',
             description: 'appTrackr is a All-In-One application for all your job search needs!',
+            deployedLink: 'https://apptrackr-web-app-d2869d2ab77f.herokuapp.com/',
         },
         {
             _id: 'Project 2',
             title: 'weatherDash',
             description: 'weatherDash convienently lets you check the weather!',
+            deployedLink: '',
         },
         {
             _id: 'Project 3',
             title: 'Travelr',
             description: 'Travelr is a All-In-One application for all your traveling search needs!',
+            deployedLink: '',
         }
     ]
 
@@ -30,23 +33,27 @@ export default function portfolio() {
                 }}>
 
                 {/* Project 1 */}
-
                 <Box sx={
                     {
                         p: 2,
                         border: '1px dashed grey'
                     }}>
-                    {/* Project Name */}
-                    {projects[0]._id}
+                        {/* Project Name */}
+                        {projects[0]._id}
 
                     <Box>
-                    {/* Project Title */}
-                    {projects[0].title}
+                        {/* Project Title */}
+                        {projects[0].title}
                     </Box>
 
                     <Box>
-                        {/* Description */}
+                    {/* Description */}
                         <p>{projects[0].description}</p>
+                    </Box>
+
+                    {/* Deployed Link */}
+                    <Box>
+                        <a href={projects[0].deployedLink}>Deployed Link</a>
                     </Box>
                 </Box>
 
@@ -56,16 +63,20 @@ export default function portfolio() {
                         p: 2,
                         border: '1px dashed grey'
                     }}>
-                    {/* Project Name */}
-                    {projects[1]._id}
+                        {/* Project Name */}
+                        {projects[1]._id}
 
                     <Box>
-                    {/* Project Title */}
-                    {projects[1].title}
+                        {/* Project Title */}
+                        {projects[1].title}
                     </Box>
 
                     <Box>
-                    <p>{projects[1].description}</p>
+                        <p>{projects[1].description}</p>
+                    </Box>
+
+                    <Box>
+                        <a href={projects[1].deployedLink}>Deployed Link</a>
                     </Box>
                 </Box>
 
@@ -75,16 +86,20 @@ export default function portfolio() {
                         p: 2,
                         border: '1px dashed grey'
                     }}>
-                    {/* Project Name */}
-                    {projects[2]._id}
+                        {/* Project Name */}
+                        {projects[2]._id}
 
                     <Box>
-                    Project Title
-                    {projects[2].title}
+                        Project Title
+                        {projects[2].title}
                     </Box>
 
                     <Box>
-                    <p>{projects[2].description}</p>
+                        <p>{projects[2].description}</p>
+                    </Box>
+
+                    <Box>
+                        <a href={projects[2].deployedLink}>Deployed Link</a>
                     </Box>
                 </Box>
 
