@@ -7,16 +7,19 @@ export default function portfolio() {
             _id: 'Project 1',
             title: 'appTrackr',
             description: 'appTrackr is a All-In-One application for all your job search needs!',
+            deployedLink: 'https://apptrackr-web-app-d2869d2ab77f.herokuapp.com/',
         },
         {
             _id: 'Project 2',
             title: 'weatherDash',
             description: 'weatherDash convienently lets you check the weather!',
+            deployedLink: '',
         },
         {
             _id: 'Project 3',
             title: 'Travelr',
             description: 'Travelr is a All-In-One application for all your traveling search needs!',
+            deployedLink: '',
         }
     ]
 
@@ -45,8 +48,13 @@ export default function portfolio() {
                     </Box>
 
                     <Box>
-                        {/* Description */}
+                    {/* Description */}
                         <p>{projects[0].description}</p>
+                    </Box>
+
+                    {/* Deployed Link */}
+                    <Box>
+                        <a href={projects[0].deployedLink}>Deployed Link</a>
                     </Box>
                 </Box>
 
@@ -67,6 +75,10 @@ export default function portfolio() {
                     <Box>
                     <p>{projects[1].description}</p>
                     </Box>
+
+                    <Box>
+                        <a href={projects[1].deployedLink}>Deployed Link</a>
+                    </Box>
                 </Box>
 
                 {/* Project 3 */}
@@ -85,6 +97,10 @@ export default function portfolio() {
 
                     <Box>
                     <p>{projects[2].description}</p>
+                    </Box>
+
+                    <Box>
+                        <a href={projects[2].deployedLink}>Deployed Link</a>
                     </Box>
                 </Box>
 
