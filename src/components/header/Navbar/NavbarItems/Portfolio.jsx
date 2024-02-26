@@ -3,8 +3,7 @@ import Box from '@mui/material/Box';
 export default function portfolio() {
     return (
         <>
-            <h1>Portfolio Page</h1>
-            <h2>Projects:</h2>
+            <h1>Projects:</h1>
             <Box sx={
                 {
                     p: 2,
