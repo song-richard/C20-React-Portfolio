@@ -20,7 +20,25 @@ export default function portfolio() {
             title: 'Travelr',
             description: 'Travelr is a All-In-One application for all your traveling search needs!',
             deployedLink: '',
-        }
+        },
+        {
+            _id: 'Project 4',
+            title: '',
+            description: '',
+            deployedLink: '',
+        },
+        {
+            _id: 'Project 5',
+            title: '',
+            description: '',
+            deployedLink: '',
+        },
+        {
+            _id: 'Project 6',
+            title: '',
+            description: '',
+            deployedLink: '',
+        },
     ]
 
     return (
@@ -98,8 +116,80 @@ export default function portfolio() {
                     <p>{projects[2].description}</p>
                     </Box>
 
+                    
+
                     <Box>
                         <a href={projects[2].deployedLink}>Deployed Link</a>
+                    </Box>
+                </Box>
+
+                {/* Project 4 */}
+                <Box sx={
+                    {
+                        p: 2,
+                        border: '1px dashed grey'
+                    }}>
+                    {/* Project Name */}
+                    {projects[3]._id}
+
+                    <Box>
+                    Project Title
+                    {projects[3].title}
+                    </Box>
+
+                    <Box>
+                    <p>{projects[3].description}</p>
+                    </Box>
+
+                    <Box>
+                        <a href={projects[3].deployedLink}>Deployed Link</a>
+                    </Box>
+                </Box>
+
+                {/* Project 5 */}
+                <Box sx={
+                    {
+                        p: 2,
+                        border: '1px dashed grey'
+                    }}>
+                    {/* Project Name */}
+                    {projects[4]._id}
+
+                    <Box>
+                    Project Title
+                    {projects[4].title}
+                    </Box>
+
+                    <Box>
+                    <p>{projects[4].description}</p>
+                    </Box>
+
+                    <Box>
+                        <a href={projects[4].deployedLink}>Deployed Link</a>
+                    </Box>
+                </Box>
+                
+                {/* Project 6 */}
+                <Box sx={
+                    {
+                        p: 2,
+                        border: '1px dashed grey'
+                    }}>
+                    {/* Project Name */}
+                    {projects[5]._id}
+
+                    <Box>
+                    Project Title
+                    {projects[5].title}
+                    </Box>
+
+                    <Box>
+                    <p>{projects[5].description}</p>
+                    </Box>
+
+
+                    <Box>
+                        <a href={projects[5].deployedLink}>Deployed Link</a>
                     </Box>
                 </Box>
 

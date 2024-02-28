@@ -30,14 +30,14 @@ import Resume from './NavbarItems/Resume';
 export default function Navbar() {
     return (
         <>
-            <AppBar position="static" sx={{ display: 'flex', justifyContent: 'center' }}>
-                <Typography variant='h6' color="inherit">
-                    <Link to='/about' style={{ marginRight: '10px' }}>About Me</Link>
-                    <Link to='/portfolio' style={{ marginRight: '10px' }}>Portfolio</Link>
-                    <Link to='/contact' style={{ marginRight: '10px' }}>Contact</Link>
-                    <Link to='/resume'>Resume</Link>
-                </Typography>
-            </AppBar>
+            <nav className="bg-gray-900 py-4">
+                <div className="max-w-4xl mx-auto flex justify-center">
+                    <Link to='/about' className="text-white hover:text-gray-300 px-4">About Me</Link>
+                    <Link to='/portfolio' className="text-white hover:text-gray-300 px-4">Portfolio</Link>
+                    <Link to='/contact' className="text-white hover:text-gray-300 px-4">Contact</Link>
+                    <Link to='/resume' className="text-white hover:text-gray-300 px-4">Resume</Link>
+                </div>
+            </nav>
         </>
     );
 };
