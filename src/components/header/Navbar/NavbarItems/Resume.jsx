@@ -10,5 +10,5 @@ export default function Resume() {
                 View Resume
             </a>
         </div>
-    )
-}
+    );
+};
