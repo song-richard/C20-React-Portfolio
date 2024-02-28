@@ -43,7 +43,7 @@ export default function portfolio() {
 
     return (
         <>
-            <h1>Projects:</h1>
+            <h1 className="text-3xl font-bold text-gray-900 mt-8 mb-4">Projects:</h1>
             <Box sx={
                 {
                     p: 2,
