@@ -28,12 +28,12 @@ export default function Contact() {
 
     return (
         <>
-            <h1>Contact Page</h1>
-            <form onSubmit={handleSubmit}>
-                <input name='name' value={name} onChange={handleForm} placeholder='Name'/>
-                <input name='email' value={email} onChange={handleForm} placeholder='Email'/>
-                <input name='message' value={message} onChange={handleForm} placeholder='Message'/>
-                <button>Submit</button>
+            <h1 className="text-3xl font-bold text-gray-900 mb-6">Contact Page</h1>
+            <form onSubmit={handleSubmit} className="space-y-4">
+                <input name='name' value={name} onChange={handleForm} placeholder='Name' className="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500"/>
+                <input name='email' value={email} onChange={handleForm} placeholder='Email' className="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500"/>
+                <input name='message' value={message} onChange={handleForm} placeholder='Message' className="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500"/>
+                <button className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-300">Submit</button>
             </form>
         </>
     );
