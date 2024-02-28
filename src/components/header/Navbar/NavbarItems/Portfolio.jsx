@@ -6,26 +6,26 @@ export default function portfolio() {
         {
             _id: 'Project 1',
             title: 'appTrackr',
-            description: 'appTrackr is a All-In-One application for all your job search needs!',
+            description: 'Elevate your job search experience with AppTrackr, a dynamic full-stack job application tracker that seamlessly blends the power of authentication and RESTful principles',
             deployedLink: 'https://apptrackr-web-app-d2869d2ab77f.herokuapp.com/',
         },
         {
             _id: 'Project 2',
             title: 'weatherDash',
-            description: 'weatherDash convienently lets you check the weather!',
-            deployedLink: '',
+            description: 'Experience real-time weather information with the Weather Forecast App.',
+            deployedLink: 'https://song-richard.github.io/weatherDash/',
         },
         {
             _id: 'Project 3',
             title: 'Travelr',
-            description: 'Travelr is a All-In-One application for all your traveling search needs!',
-            deployedLink: '',
+            description: 'Presenting a comprehensive Travel Preparation app that seamlessly retrieves real-time information on weather updates, upcoming events, top-notch restaurants, and available hotels',
+            deployedLink: 'https://song-richard.github.io/travelr/',
         },
         {
             _id: 'Project 4',
-            title: '',
-            description: '',
-            deployedLink: '',
+            title: 'LunchRoulette',
+            description: 'Introducing the Lunch Generator, an intuitive application crafted to elevate your lunchtime experience.',
+            deployedLink: 'https://siennaxstarr.github.io/LunchRoulette/',
         },
         {
             _id: 'Project 5',
@@ -115,8 +115,6 @@ export default function portfolio() {
                     <Box>
                     <p>{projects[2].description}</p>
                     </Box>
-
-                    
 
                     <Box>
                         <a href={projects[2].deployedLink}>Deployed Link</a>
