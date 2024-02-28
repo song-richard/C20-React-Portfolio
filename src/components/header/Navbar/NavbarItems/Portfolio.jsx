@@ -42,157 +42,17 @@ export default function portfolio() {
     ]
 
     return (
-        <>
-            <h1 className="text-3xl font-bold text-gray-900 mt-8 mb-4">Projects:</h1>
-            <Box sx={
-                {
-                    p: 2,
-                    border: '3px dashed grey',
-                }}>
-
-                {/* Project 1 */}
-
-                <Box sx={
-                    {
-                        p: 2,
-                        border: '1px dashed grey'
-                    }}>
-                    {/* Project Name */}
-                    {projects[0]._id}
-
-                    <Box>
-                    {/* Project Title */}
-                    {projects[0].title}
-                    </Box>
-
-                    <Box>
-                    {/* Description */}
-                        <p>{projects[0].description}</p>
-                    </Box>
-
-                    Desployed Link
-                    <Box>
-                        <a href={projects[0].deployedLink}>Deployed Link</a>
-                    </Box>
-                </Box>
-
-                {/* Project 2 */}
-                <Box sx={
-                    {
-                        p: 2,
-                        border: '1px dashed grey'
-                    }}>
-                    {/* Project Name */}
-                    {projects[1]._id}
-
-                    <Box>
-                    {/* Project Title */}
-                    {projects[1].title}
-                    </Box>
-
-                    <Box>
-                    <p>{projects[1].description}</p>
-                    </Box>
-
-                    <Box>
-                        <a href={projects[1].deployedLink}>Deployed Link</a>
-                    </Box>
-                </Box>
-
-                {/* Project 3 */}
-                <Box sx={
-                    {
-                        p: 2,
-                        border: '1px dashed grey'
-                    }}>
-                    {/* Project Name */}
-                    {projects[2]._id}
-
-                    <Box>
-                    Project Title
-                    {projects[2].title}
-                    </Box>
-
-                    <Box>
-                    <p>{projects[2].description}</p>
-                    </Box>
-
-                    <Box>
-                        <a href={projects[2].deployedLink}>Deployed Link</a>
-                    </Box>
-                </Box>
-
-                {/* Project 4 */}
-                <Box sx={
-                    {
-                        p: 2,
-                        border: '1px dashed grey'
-                    }}>
-                    {/* Project Name */}
-                    {projects[3]._id}
-
-                    <Box>
-                    Project Title
-                    {projects[3].title}
-                    </Box>
-
-                    <Box>
-                    <p>{projects[3].description}</p>
-                    </Box>
-
-                    <Box>
-                        <a href={projects[3].deployedLink}>Deployed Link</a>
-                    </Box>
-                </Box>
-
-                {/* Project 5 */}
-                <Box sx={
-                    {
-                        p: 2,
-                        border: '1px dashed grey'
-                    }}>
-                    {/* Project Name */}
-                    {projects[4]._id}
-
-                    <Box>
-                    Project Title
-                    {projects[4].title}
-                    </Box>
-
-                    <Box>
-                    <p>{projects[4].description}</p>
-                    </Box>
-
-                    <Box>
-                        <a href={projects[4].deployedLink}>Deployed Link</a>
-                    </Box>
-                </Box>
-                
-                {/* Project 6 */}
-                <Box sx={
-                    {
-                        p: 2,
-                        border: '1px dashed grey'
-                    }}>
-                    {/* Project Name */}
-                    {projects[5]._id}
-
-                    <Box>
-                    Project Title
-                    {projects[5].title}
-                    </Box>
-
-                    <Box>
-                    <p>{projects[5].description}</p>
-                    </Box>
-
-
-                    <Box>
-                        <a href={projects[5].deployedLink}>Deployed Link</a>
-                    </Box>
-                </Box>
-
-            </Box>
-        </>
+        <div className="max-w-4xl mx-auto px-4 py-8">
+            <h1 className="text-3xl font-bold text-gray-900 mb-6">Projects:</h1>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {projects.map((project, index) => (
+                    <div key={index} className="border border-gray-300 rounded p-4">
+                        <h2 className="text-lg font-bold mb-2">{project.title}</h2>
+                        <p className="text-gray-700">{project.description}</p>
+                        <a href={project.deployedLink} className="text-blue-500 hover:underline mt-2 inline-block">Deployed Link</a>
+                    </div>
+                ))}
+            </div>
+        </div>
     );
 };
