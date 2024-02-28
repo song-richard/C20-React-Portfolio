@@ -29,15 +29,15 @@ export default function portfolio() {
         },
         {
             _id: 'Project 5',
-            title: '',
-            description: '',
-            deployedLink: '',
+            title: 'README Generator',
+            description: 'The README Generator is a command-line application built with JavaScript and Node.js that simplifies the process of creating a professional and comprehensive README file for your projects',
+            deployedLink: 'https://github.com/song-richard/readmeGen/blob/main/Assets/README%20GIF.gif',
         },
         {
             _id: 'Project 6',
-            title: '',
-            description: '',
-            deployedLink: '',
+            title: 'Work Day Scheduler',
+            description: 'Welcome to my Work Day Scheduler, a modern and efficient tool designed to enhance your daily productivity',
+            deployedLink: 'https://song-richard.github.io/workDayScheduler/',
         },
     ]
 
@@ -86,8 +86,9 @@ export default function portfolio() {
                     {projects[1]._id}
 
                     <Box>
-                    {/* Project Title */}7
-                    {projects[1].title}                    </Box>
+                    {/* Project Title */}
+                    {projects[1].title}
+                    </Box>
 
                     <Box>
                     <p>{projects[1].description}</p>
