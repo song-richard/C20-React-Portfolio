@@ -1,5 +1,3 @@
-import { Box } from "@mui/system";
-
 export default function About() {
 
     const richard = [
@@ -21,6 +19,7 @@ export default function About() {
         <>
             <div className="mx-auto max-w-lg text-center">
                 <h1 className="text-3xl font-bold my-8">{richard[2].bio}</h1>
+                <img src="src\assets\profile_pic.jpg"/>
 
                 <div className="bg-gray-100 rounded-lg p-8">
                     <h2 className="text-lg font-bold mb-4">{richard[0].skillsTitle}</h2>
