@@ -33,17 +33,18 @@ export default function portfolio() {
                 }}>
 
                 {/* Project 1 */}
+
                 <Box sx={
                     {
                         p: 2,
                         border: '1px dashed grey'
                     }}>
-                        {/* Project Name */}
-                        {projects[0]._id}
+                    {/* Project Name */}
+                    {projects[0]._id}
 
                     <Box>
-                        {/* Project Title */}
-                        {projects[0].title}
+                    {/* Project Title */}
+                    {projects[0].title}
                     </Box>
 
                     <Box>
@@ -51,7 +52,7 @@ export default function portfolio() {
                         <p>{projects[0].description}</p>
                     </Box>
 
-                    {/* Deployed Link */}
+                    Desployed Link
                     <Box>
                         <a href={projects[0].deployedLink}>Deployed Link</a>
                     </Box>
@@ -63,16 +64,15 @@ export default function portfolio() {
                         p: 2,
                         border: '1px dashed grey'
                     }}>
-                        {/* Project Name */}
-                        {projects[1]._id}
+                    {/* Project Name */}
+                    {projects[1]._id}
 
                     <Box>
-                        {/* Project Title */}
-                        {projects[1].title}
-                    </Box>
+                    {/* Project Title */}7
+                    {projects[1].title}                    </Box>
 
                     <Box>
-                        <p>{projects[1].description}</p>
+                    <p>{projects[1].description}</p>
                     </Box>
 
                     <Box>
@@ -86,16 +86,16 @@ export default function portfolio() {
                         p: 2,
                         border: '1px dashed grey'
                     }}>
-                        {/* Project Name */}
-                        {projects[2]._id}
+                    {/* Project Name */}
+                    {projects[2]._id}
 
                     <Box>
-                        Project Title
-                        {projects[2].title}
+                    Project Title
+                    {projects[2].title}
                     </Box>
 
                     <Box>
-                        <p>{projects[2].description}</p>
+                    <p>{projects[2].description}</p>
                     </Box>
 
                     <Box>
